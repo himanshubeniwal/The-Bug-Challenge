@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Bug Bounty</title>
+<script>
+function score1(){	
+	   var newScore1 = document.getElementById("r1").innerHTML;
+    var value1 = parseInt(newScore1,10) + 1;
+    document.getElementById("r1").innerHTML = value1;
+}
+function score2(){	
+	   var newScore2 = document.getElementById("r2").innerHTML;
+    var value2 = parseInt(newScore2,10) + 1;
+    document.getElementById("r2").innerHTML = value2;
+}
+function score3(){	
+	   var newScore3 = document.getElementById("r3").innerHTML;
+    var value3 = parseInt(newScore3,10) + 1;
+    document.getElementById("r3").innerHTML = value3;
+}
+function score4(){	
+	   var newScore4 = document.getElementById("r4").innerHTML;
+    var value4 = parseInt(newScore4,10) + 1;
+    document.getElementById("r4").innerHTML = value4;
+}
+function score5(){	
+	   var newScore5 = document.getElementById("r5").innerHTML;
+    var value5 = parseInt(newScore5,10) + 1;
+    document.getElementById("r5").innerHTML = value5;
+}
+function nextround(){	
+	var newScore = document.getElementById("round").innerHTML;
+    var value = parseInt(newScore,10) + 1;
+	document.getElementById("round").innerHTML = value;
+}
+</script>
+<style type=text/css>
+.siz {
+	font-size:20px;
+}
+
+.ssiz {
+	font-size:16px;
+	color:blue;
+}
+.rsiz {
+	font-size:30px;
+	color:blue;
+}
+.rr {
+	font-size:35px;
+	color:blue;
+}
+.tt {
+	font-size:55px;
+	
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="text-center">
+<e class='tt'>The Bug Challenge</e>
+<br>
+<p align='center'><w class='rr'>Round : </w><z class='rsiz' id='round'>1</z></p> <p align='right'><input type='submit' id='button' onClick='nextround()' class="btn btn-primary" value='>>>' /></p><br><br>
+<br><br>
+Team A:<br>
+<span class="siz">Score :&nbsp;&nbsp;&nbsp;</span><x class="ssiz" id='r1'>0</x>&nbsp;&nbsp;&nbsp;<input type='submit' id='1' class="btn btn-success" onClick='score1()' value='Add' />  <input type='submit' class="btn btn-danger" id='1h' onClick='document.getElementById("1").style.display="none";document.getElementById("1h").style.display="none";' value='Eleminate Team' /><br><br>
+Team B:<br>
+<span class="siz">Score :&nbsp;&nbsp;&nbsp;</span><x class="ssiz" id='r2'>0</x>&nbsp;&nbsp;&nbsp;<input class="btn btn-success" type='submit' id='2' onClick='score2()' value='Add' />  <input class="btn btn-danger" type='submit' id='2h' onClick='document.getElementById("2").style.display="none";document.getElementById("2h").style.display="none";' value='Eleminate Team' /><br><br>
+Team C:<br>
+<span class="siz">Score :&nbsp;&nbsp;&nbsp;</span><x class="ssiz" id='r3'>0</x>&nbsp;&nbsp;&nbsp;<input class="btn btn-success" type='submit' id='3' onClick='score3()' value='Add' />  <input class="btn btn-danger" type='submit' id='3h' onClick='document.getElementById("3").style.display="none";document.getElementById("3h").style.display="none";' value='Eleminate Team' /><br><br>
+Team D:<br>
+<span class="siz">Score :&nbsp;&nbsp;&nbsp;</span><x class="ssiz" id='r4'>0</x>&nbsp;&nbsp;&nbsp;<input class="btn btn-success" type='submit' id='4' onClick='score4()' value='Add' />  <input class="btn btn-danger" type='submit'	 id='4h' onClick='document.getElementById("4").style.display="none";document.getElementById("4h").style.display="none";' value='Eleminate Team' /><br><br>
+Team E:<br>
+<span class="siz">Score :&nbsp;&nbsp;&nbsp;</span><x class="ssiz" id='r5'>0</x>&nbsp;&nbsp;&nbsp;<input class="btn btn-success" type='submit' id='5' onClick='score5()' value='Add' />  <input class="btn btn-danger" type='submit' id='5h' onClick='document.getElementById("5").style.display="none";document.getElementById("5h").style.display="none";' value='Eleminate Team' /><br><br>
+</div>
+</body>
+</html>
+
+
+<?php
+//header("Location: /hms/");
+
+?>
